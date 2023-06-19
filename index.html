@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>예림디자인</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6b9483975b.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/script.js"></script>
+
+
+</head>
+<body>
+  <!-- 헤더 -->
+  <header>
+    <nav>
+      <div class="hbg">
+        <div class="hbg_btn"><span></span><span></span><span></span></div>
+        <div class="hbg_menu">
+          <ul>
+            <li class="hbg_on">
+              <div>
+                <p>지정게시대</p>
+                <div class="drop_icon"><span></span><span></span></div>
+              </div>
+              <ul>
+                <li><a href="#">중구</a></li>
+                <li><a href="#">남구</a></li>
+                <li><a href="#">달서구</a></li>
+                <li><a href="#">수성구</a></li>
+                <li><a href="#">동구</a></li>
+                <li><a href="#">북구</a></li>
+                <li><a href="#">서구</a></li>
+                <li><a href="#">달성군</a></li>
+              </ul>
+            </li>
+            <li class="hbg_on">
+              <div>
+                <p>현수막</p>
+                <div class="hbg_drop"><span></span><span></span></div>
+              </div>
+              <ul>
+                <li><a href="#">일반현수막</a></li>
+              </ul>
+            </li>
+            <li class="hbg_on">
+              <div>
+                <p>배너</p>
+                <div class="hbg_drop"><span></span><span></span></div>
+              </div>
+              <ul>
+                <li><a href="#">PET배너</a></li>
+                <li><a href="#">투명배너</a></li>
+                <li><a href="#">메쉬배너</a></li>
+                <li><a href="#">미니배너</a></li>
+                <li><a href="#">현수막배너</a></li>
+              </ul>
+            </li>
+            <li class="hbg_on">
+              <div>
+                <p>보드</p>
+                <div class="hbg_drop"><span></span><span></span></div>
+              </div>
+              <ul>
+                <li><a href="#">폼보드</a></li>
+                <li><a href="#">포맥스보드</a></li>
+                <li><a href="#">아크릴보드</a></li>
+              </ul>
+            </li>
+            <li class="hbg_on">
+              <div>
+                <p>시트지</p>
+                <div class="hbg_drop"><span></span><span></span></div>
+              </div>
+              <ul>
+                <li><a href="#">유포시트지</a></li>
+                <li><a href="#">반투명시트지</a></li>
+                <li><a href="#">투명시트지</a></li>
+                <li><a href="#">반사시트지</a></li>
+                <li><a href="#">PVC시트지(UV잉크)</a></li>
+                <li><a href="#">PVC시트지(수성잉크)</a></li>
+              </ul>
+            </li>
+            <li class="hbg_on">
+              <div>
+                <p>간판</p>
+                <div class="hbg_drop"><span></span><span></span></div>
+              </div>
+              <ul>
+                <li><a href="#">철제입간판</a></li>
+                <li><a href="#">스텐입간판</a></li>
+                <li><a href="#">아크릴입간판</a></li>
+                <li><a href="#">에어간판</a></li>
+              </ul>
+            </li>
+            <li class="hbg_on">
+              <div>
+                <p>인쇄물</p>
+                <div class="hbg_drop"><span></span><span></span></div>
+              </div>
+              <ul>
+                <li><a href="#">명함</a></li>
+                <li><a href="#">전단지</a></li>
+                <li><a href="#">스티커</a></li>
+                <li><a href="#">판촉물</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="title">
+        <h1><a href="index.html"><img src="img/logo02.png" alt=""></a></h1>
+      </div>
+      <div class="gnb">
+        <ul>
+          <li class="menu">
+            <a href="#">지정게시대</a>
+            <div class="depth2 hide">
+              <ul>
+                <li><a href="#">중구</a></li>
+                <li><a href="#">남구</a></li>
+                <li><a href="#">달서구</a></li>
+                <li><a href="#">수성구</a></li>
+                <li><a href="#">동구</a></li>
+                <li><a href="#">북구</a></li>
+                <li><a href="#">서구</a></li>
+                <li><a href="#">달성군</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu">
+            <a href="#">현수막</a>
+            <div class="depth2 hide">
+              <ul>
+                <li><a href="#">일반현수막</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu">
+            <a href="#">배너</a>
+            <div class="depth2 hide">
+              <ul>
+                <li><a href="#">PET배너</a></li>
+                <li><a href="#">투명배너</a></li>
+                <li><a href="#">메쉬배너</a></li>
+                <li><a href="#">미니배너</a></li>
+                <li><a href="#">현수막배너</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu">
+            <a href="#">보드</a>
+            <div class="depth2 hide">
+              <ul>
+                <li><a href="#">폼보드</a></li>
+                <li><a href="#">포맥스보드</a></li>
+                <li><a href="#">아크릴보드</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu">
+            <a href="#">시트지</a>
+            <div class="depth2 hide">
+              <ul>
+                <li><a href="#">유포시트지</a></li>
+                <li><a href="#">반투명시트지</a></li>
+                <li><a href="#">투명시트지</a></li>
+                <li><a href="#">반사시트지</a></li>
+                <li><a href="#">PVC시트지(UV잉크)</a></li>
+                <li><a href="#">PVC시트지(수성잉크)</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu">
+            <a href="#">간판</a>
+            <div class="depth2 hide">
+              <ul>
+                <li><a href="#">철제입간판</a></li>
+                <li><a href="#">스텐입간판</a></li>
+                <li><a href="#">아크릴입간판</a></li>
+                <li><a href="#">에어간판</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu">
+            <a href="#">인쇄물</a>
+            <div class="depth2 hide">
+              <ul>
+                <li><a href="#">명함</a></li>
+                <li><a href="#">전단지</a></li>
+                <li><a href="#">스티커</a></li>
+                <li><a href="#">판촉물</a></li>
+              </ul>
+            </div>
+          </li>
+          <div class="inner_bg"></div>
+        </ul>
+      </div>
+      <div class="sign">
+        <img src="img/User.png" alt="">
+        <div class="sign_wrap">
+          <div class="search">
+            <input type="text">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+          <a href="#">로그인</a>
+          <a href="#">회원가입</a>
+        </div>
+      </div>
+    </nav>
+    <div class="main_bg"></div>
+  </header>
+  <!-- //헤더 -->
+
+  <!-- 섹션1 -->
+  <section class="sec01">
+    <!-- <div class="sec01_wrap swiper">
+      <div class="sec01_con swiper-wrapper">
+        <div class="sec01_item swiper-slide">
+          <img src="img/mv01.jpg" alt="">
+          <div class="item_txt">
+            <h2>현수막디자인</h2>
+            <p>예림디자인에서 만나보세요</p>
+            <a href="#">바로가기</a>
+          </div>
+        </div>
+        <div class="sec01_item swiper-slide">
+          <img src="img/mv02.jpg" alt="">
+          <div class="item_txt">
+            <h2></h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="sec01_item swiper-slide">
+          <img src="img/main-bg04.jpg" alt="">
+          <div class="item_txt">
+            <h2></h2>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="main_txt">
+      <div class="main_txt_wrap">
+        <h2><img src="img/logo.png" alt=""></h2>
+        <p>각종 맞춤 디자인 광고,<br>예림디자인에서 만나보세요</p>
+        <a href=""></a>
+      </div>
+    </div>
+    <div class="main_con">
+      <div class="mv1">
+        <!-- <img src="img/mv1_01.png" alt="">
+        <img src="img/mv1_02.png" alt=""> -->
+        <img src="img/mv1_1.jpg" alt="">
+        <img src="img/mv1_2.jpg" alt="">
+        <img src="img/mv1_3.jpg" alt="">
+      </div>
+      <div class="mv2">
+        <!-- <img src="img/mv2_01.png" alt="">
+        <img src="img/mv2_02.png" alt=""> -->
+        <img src="img/mv2_1.jpg" alt="">
+        <img src="img/mv2_2.jpg" alt="">
+        <img src="img/mv2_3.jpg" alt="">
+      </div>
+      <div class="mv3">
+        <img src="img/mv3_1.jpg" alt="">
+        <img src="img/mv3_2.jpg" alt="">
+      </div>
+    </div>
+  </section> 
+  <!-- //섹션1 -->
+
+  <!-- 섹션2 -->
+  <section class="sec02">
+    <div class="sec02_wrap container">
+      <div class="sec_title">
+        <h2>지정게시대</h2>
+        <p>위치를 확인하고 원하시는 게시대에 신청하세요</p>
+        <a href="#">전체보기</a>
+      </div>
+      <div class="sec02_right swiper1">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide sec02_item">
+            <a href="#">
+              <div class="item_img">
+                <img src="img/sec02_01.png" alt="">
+              </div>
+              <div class="sec02_txt">
+                <h3>중구</h3>
+                <div class="sec02_pin">
+                  <img src="img/pin.png" alt="">
+                  <p>위치확인</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide sec02_item">
+            <a href="#">
+              <div class="item_img">
+                <img src="img/sec02_02.jpg" alt="">
+              </div>
+              <div class="sec02_txt">
+                <h3>남구</h3>
+                <div class="sec02_pin">
+                  <img src="img/pin.png" alt="">
+                  <p>위치확인</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide sec02_item">
+            <a href="#">
+              <div class="item_img">
+                <img src="img/sec02_03.jpg" alt="">
+              </div>
+              <div class="sec02_txt">
+                <h3>달서구</h3>
+                <div class="sec02_pin">
+                  <img src="img/pin.png" alt="">
+                  <p>위치확인</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide sec02_item">
+            <a href="#">
+              <div class="item_img">
+                <img src="img/sec02_04.jpg" alt="">
+              </div>
+              <div class="sec02_txt">
+                <h3>수성구</h3>
+                <div class="sec02_pin">
+                  <img src="img/pin.png" alt="">
+                  <p>위치확인</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide sec02_item">
+            <a href="#">
+              <div class="item_img">
+                <img src="img/sec02_05.jpg" alt="">
+              </div>
+              <div class="sec02_txt">
+                <h3>동구</h3>
+                <div class="sec02_pin">
+                  <img src="img/pin.png" alt="">
+                  <p>위치확인</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide sec02_item">
+            <a href="#">
+              <div class="item_img">
+                <img src="img/sec02_06.jpg" alt="">
+              </div>
+              <div class="sec02_txt">
+                <h3>북구</h3>
+                <div class="sec02_pin">
+                  <img src="img/pin.png" alt="">
+                  <p>위치확인</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide sec02_item">
+            <a href="#">
+              <div class="item_img">
+                <img src="img/sec02_07.jpg" alt="">
+              </div>
+              <div class="sec02_txt">
+                <h3>서구</h3>
+                <div class="sec02_pin">
+                  <img src="img/pin.png" alt="">
+                  <p>위치확인</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide sec02_item">
+            <a href="#">
+              <div class="item_img">
+                <img src="img/sec02_08.jpg" alt="">
+              </div>
+              <div class="sec02_txt">
+                <h3>달성군</h3>
+                <div class="sec02_pin">
+                  <img src="img/pin.png" alt="">
+                  <p>위치확인</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- //섹션2 -->
+
+  <!-- 섹션3 -->
+  <section class="sec03">
+    <div class="sec_title">
+      <h2>배너디자인</h2>
+      <p>고객의 발길을 붙잡을 예림디자인만의 가독성있는 디자인</p>
+    </div>
+    <div class="sec03_wrap">
+      <div class="sec03_item">
+        <a href="#">
+          <img src="img/sec03_01.png" alt="">
+          <div class="sec_txt">
+            <h3>현수막배너</h3>
+            <div class="sec_price">
+              <p>11,000원</p>
+              <div>
+                <img src="img/heart.png" alt="">
+                <img src="img/Bag.png" alt="">
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="sec03_item">
+        <a href="#">
+          <img src="img/sec03_01.png" alt="">
+          <div class="sec_txt">
+            <h3>현수막배너</h3>
+            <div class="sec_price">
+              <p>11,000원</p>
+              <div>
+                <img src="img/heart.png" alt="">
+                <img src="img/Bag.png" alt="">
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="sec03_item">
+        <a href="#">
+          <img src="img/sec03_01.png" alt="">
+          <div class="sec_txt">
+            <h3>현수막배너</h3>
+            <div class="sec_price">
+              <p>11,000원</p>
+              <div>
+                <img src="img/heart.png" alt="">
+                <img src="img/Bag.png" alt="">
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="sec03_more">
+        <a href="#">더보기</a>
+      </div>
+    </div>
+  </section>
+  <!-- //섹션3 -->
+
+  <!-- 섹션4 -->
+  <section class="sec04">
+    <div class="sec04_wrap container">
+      <div class="sec_title">
+        <h2>현수막</h2>
+        <p>위치를 확인하고 원하시는 게시대에 신청하세요</p>
+        <a href="#">전체보기</a>
+      </div>
+      <div class="sec04_right swiper1">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide sec04_item">
+            <a href="#">
+              <div class="item_img">
+                <img src="img/sec04_01.png" alt="">
+              </div>
+              <div class="sec_txt">
+                <h3>현수막</h3>
+                <div class="sec_price">
+                  <p>10,000원</p>
+                  <div>
+                    <img src="img/heart.png" alt="">
+                    <img src="img/Bag.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide sec04_item">
+            <a href="#">
+              <div class="item_img">
+                <img src="img/sec04_01.png" alt="">
+              </div>
+              <div class="sec_txt">
+                <h3>현수막</h3>
+                <div class="sec_price">
+                  <p>10,000원</p>
+                  <div>
+                    <img src="img/heart.png" alt="">
+                    <img src="img/Bag.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide sec04_item">
+            <a href="#">
+              <div class="item_img">
+                <img src="img/sec04_01.png" alt="">
+              </div>
+              <div class="sec_txt">
+                <h3>현수막</h3>
+                <div class="sec_price">
+                  <p>10,000원</p>
+                  <div>
+                    <img src="img/heart.png" alt="">
+                    <img src="img/Bag.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide sec04_item">
+            <a href="#">
+              <div class="item_img">
+                <img src="img/sec04_01.png" alt="">
+              </div>
+              <div class="sec_txt">
+                <h3>현수막</h3>
+                <div class="sec_price">
+                  <p>10,000원</p>
+                  <div>
+                    <img src="img/heart.png" alt="">
+                    <img src="img/Bag.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- //섹션4 -->
+
+  <!-- 섹션5 -->
+  <section class="sec05">
+    <div class="sec_title">
+      <h2>간판디자인</h2>
+      <p>가게의 첫인상을 책임질 예림디자인만의 간판디자인</p>
+    </div>
+    <div class="sec05_wrap">
+      <div class="sec03_more">
+        <a href="#">더보기</a>
+      </div>
+      <div class="sec05_item">
+        <a href="#">
+          <img src="img/sec03_01.png" alt="">
+          <div class="sec_txt">
+            <h3>현수막</h3>
+            <div class="sec_price">
+              <p>10,000원</p>
+              <div>
+                <img src="img/heart.png" alt="">
+                <img src="img/Bag.png" alt="">
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="sec05_item">
+        <a href="#">
+          <img src="img/sec03_01.png" alt="">
+          <div class="sec_txt">
+            <h3>현수막</h3>
+            <div class="sec_price">
+              <p>10,000원</p>
+              <div>
+                <img src="img/heart.png" alt="">
+                <img src="img/Bag.png" alt="">
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="sec05_item">
+        <a href="#">
+          <img src="img/sec03_01.png" alt="">
+          <div class="sec_txt">
+            <h3>현수막</h3>
+            <div class="sec_price">
+              <p>10,000원</p>
+              <div>
+                <img src="img/heart.png" alt="">
+                <img src="img/Bag.png" alt="">
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- //섹션5 -->
+
+  <!-- 섹션6 -->
+  <section class="sec06 container">
+    <h2>맞춤형 디자인</h2>
+    <div class="sec06_wrap">
+      <ul>
+        <li>
+          <h3><a href="#">명함</a></h3>
+          <div class="sec06_item">
+            <a href="#"><img src="img/sec06_01_01.png" alt=""></a>
+            <a href="#"><img src="img/sec06_01_02.png" alt=""></a>
+            <a href="#"><img src="img/sec06_01_03.png" alt=""></a>
+            <a href="#"><img src="img/sec06_01_04.png" alt=""></a>
+            <a href="#"><img src="img/sec06_01_01.png" alt=""></a>
+            <a href="#"><img src="img/sec06_01_02.png" alt=""></a>
+            <a href="#"><img src="img/sec06_01_03.png" alt=""></a>
+            <a href="#"><img src="img/sec06_01_04.png" alt=""></a>
+          </div>
+        </li>
+        <li>
+          <h3><a href="#">리플렛</a></h3>
+          <div class="sec06_item">
+            <a href="#"><img src="img/sec06_02_01.png" alt=""></a>
+            <a href="#"><img src="img/sec06_02_02.png" alt=""></a>
+            <a href="#"><img src="img/sec06_02_03.png" alt=""></a>
+            <a href="#"><img src="img/sec06_02_04.png" alt=""></a>
+          </div>
+        </li>
+        <li>
+          <h3><a href="#">스티커</a></h3>
+          <div class="sec06_item">
+            <a href="#"><img src="img/sec06_03_01.png" alt=""></a>
+            <a href="#"><img src="img/sec06_03_02.png" alt=""></a>
+            <a href="#"><img src="img/sec06_03_03.png" alt=""></a>
+            <a href="#"><img src="img/sec06_03_04.png" alt=""></a>
+          </div>
+        </li>
+        <li>
+          <h3><a href="#">전단인쇄물</a></h3>
+          <div class="sec06_item">
+            <a href="#"><img src="img/sec06_04_01.jpg" alt=""></a>
+            <a href="#"><img src="img/sec06_04_02.jpg" alt=""></a>
+            <a href="#"><img src="img/sec06_04_03.jpg" alt=""></a>
+            <a href="#"><img src="img/sec06_04_04.jpg" alt=""></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- //섹션6 -->
+
+  <!-- 푸터 -->
+  <footer>
+    <div>
+      <h2><a href="index.html"><img src="img/logo.png" alt=""></a></h2>
+      <div>
+        <a href="#">회사소개</a>
+        <a href="#">서비스이용약관</a>
+        <a href="#">개인정보처리방침</a>
+      </div>
+    </div>
+    <div class="copy">
+      <table>
+        <tr>
+          <th>회사명</th>
+          <td>예림광고디자인</td>
+        </tr>
+        <tr>
+          <th>주소</th>
+          <td>대구광역시 서구 와룡로62길 26(중리동 1159) 1층</td>
+        </tr>
+        <tr>
+          <th>사업자등록번호</th>
+          <td>651-23-01150</td>
+        </tr>
+        <tr>
+          <th>대표</th>
+          <td>도경환</td>
+        </tr>
+        <tr>
+          <th>전화</th>
+          <td>053-657-6600</td>
+        </tr>
+        <tr>
+          <th>팩스</th>
+          <td>053-622-1117</td>
+        </tr>
+      </table>
+      <div class="sns">
+        <img src="" alt="">
+        <img src="" alt="">
+      </div>
+    </div>
+
+    <div class="page_up"><span></span><span></span><span></span></div>
+  </footer>
+  <!-- //푸터 -->
+
+</body>
+</html>
