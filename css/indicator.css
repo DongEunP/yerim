@@ -2,6 +2,9 @@
   width: 100%;
   height: fit-content;
 }
+.main_vs>img{
+  width: 100vw;
+}
 
 section{
   margin-bottom: 130px;
